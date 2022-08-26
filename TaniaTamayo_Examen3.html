@@ -1,0 +1,26 @@
+<script>
+
+    // declaracion de arreglos dados en el encunciado
+     let arreglo1= [3, 2, 1, 1, 2, 3, 2, 3, 1];
+     let arreglo2= [1, 1, 2, 2, 1, 1, 1, 2, 1];
+    
+
+     let menorLongitud=Math.min(arreglo1.length,arreglo2.length)
+
+     let suma = [];
+     let multiplicar = [];
+
+// Aqui realizo la operacion para suma y multplicacion
+     for (let i=0; i<menorLongitud; i++){
+        suma.push(arreglo1[i]+arreglo2[i]);
+        multiplicar.push(arreglo1[i]*arreglo2[i]);
+
+    }    
+// presento los 2 arreglos, tambien presento la suma, multiplicacion de cada posicion.
+    console.log (arreglo1);
+    console.log (arreglo2);
+    console.log (suma);
+    console.log (multiplicar);
+    
+    
+    </script>

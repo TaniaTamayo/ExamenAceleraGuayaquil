@@ -1,0 +1,27 @@
+<script>
+
+let horasTrabajadas=53
+let HoraOrdinaria=265
+let HoraExtra=350
+let pagoTrabajador;
+let ValorHoraExtra;
+let ValorHoraOrdinarias
+
+if (horasTrabajadas<40) {
+
+ValorHoraOrdinarias= (40*HoraOrdinaria);
+console.log ('Sus pago horas normales', ValorHoraOrdinarias)
+}
+
+
+if (horasTrabajadas>40) {
+    
+ numHoraExtra= (horasTrabajadas - 40);
+
+ ValorHoraExtra = (numHoraExtra*HoraExtra);
+ console.log ('Sus pago horas extras', ValorHoraExtra)
+ 
+}
+
+
+</script>

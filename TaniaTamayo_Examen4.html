@@ -1,0 +1,73 @@
+<script>
+    class Persona {
+     nombre;
+     apellido;
+     edad;
+ 
+     constructor(nombre,apellido, edad){
+         this.nombre = nombre;
+         this.apellido = apellido;
+         this.edad=edad;
+        }
+
+     getDDetalles (){
+    console.log (this.nombre, this.apellido,this.edad)
+    }
+} 
+    let persona= new Persona('Tania', 'Tamayo', 34);
+    persona.getDDetalles();
+
+
+class Empleado extends Persona{
+    confianzaC;
+    sindicatoS;
+  
+ 
+     constructor(nombre,apellido, edad, confianzaC,sindicatoS){
+        super(nombre,apellido,edad)
+
+         this.confianzaC = confianzaC;
+         this.sindicatoS = sindicatoS;
+       
+        }
+
+        getDDetalles (){
+        console.log (this.nombre, this.apellido,this.edad,this.confianzaC,this.sindicatoS)
+        }
+    } 
+    let empleado= new Empleado('Tania', 'Tamayo', 34, 'Empleado Confianza', 'Empleado Sindicato');
+    empleado.getDDetalles();
+
+class Nomina extends Empleado{
+     arregloEmpleados=[]      
+     constructor(nombre,apellido, edad, confianzaC,sindicatoS){
+        super(nombre,apellido,edad,confianzaC, sindicatoS)
+         this.arregloEmpleados=[]  
+             
+        }
+        calcularPagoDiasLaborados (min, max){
+            return Math.floor(Math.random()*(max-min+1)+min); 
+            
+            for(let i=1; i<=15; i++){
+              console.log (calcularPagoDiasLaborados(5,15));
+           }
+        }
+        calcularNomina (){
+
+             let pagodia;
+            if (this.arregloEmpleados=sindicatoS){
+             pagodia= 350;
+           }
+           if (this.arregloEmpleados=confianzaC){
+             pagodia= 500;
+           }
+        }
+        
+} 
+
+
+
+            
+
+    
+    </script>
